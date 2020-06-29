@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">SecureNote</string>
+    <string name="powered_by">Powered By: Burhan Ahmad</string>
+    <string name="phone_authenticate_text">Authenticate Via Phone Security</string>
+    <string name="google_authenticate_text">Authenticate Via Google</string>
+    <string name="get_started_text">Let\'s Get Started</string>
+
+
+
+
+    <!-- Strings for On Boarding Screen -->
+
+    <!--Titles-->
+    <string name="first_slide_title">Authentication</string>
+    <string name="second_slide_title">Add Note</string>
+    <string name="third_slide_title">Edit Note</string>
+    <string name="fourth_slide_title">Save Note</string>
+    <string name="fifth_slide_title">Delete</string>
+    <string name="sixth_slide_title">Delete All Notes</string>
+    <!--Descriptions-->
+    <string name="first_slide_desc">You can choose either one of two ways via Phone/Google to Authenticate. </string>
+    <string name="second_slide_desc">Just tap on Floating add button to create new note on bottom right corner. </string>
+    <string name="third_slide_desc">Tap on any listed notes you want to edit.</string>
+    <string name="fourth_slide_desc">If you are in create new Note or edit Note tap on top right corner save/update button.</string>
+    <string name="fifth_slide_desc">You can either swipe left or right to any note listed to delete.</string>
+    <string name="sixth_slide_desc">Tap on    <font size="20"><b>"&#8942;"</b></font>    top right corner If you want you can delete whole list of created notes at once.</string>
+    <string name="skip_btn_text">Skip</string>
+
+    <string name="rate_dialog_title">Rate Me</string>
+    <string name="rate_dialog_message">If you feel secure using NoteApp this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
+    <string name="rate_dialog_ok">Rate It Now</string>
+    <string name="rate_dialog_cancel">Remind Me Later</string>
+    <string name="rate_dialog_no">No, Thanks</string>
+
+
+
+</resources>

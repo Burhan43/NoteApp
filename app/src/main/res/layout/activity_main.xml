@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <include
+           layout="@layout/custom_action_bar"
+           android:id="@+id/main_activity_toolbar">
+
+       </include>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:padding="40dp"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:visibility="gone"
+
+        android:layout_centerInParent="true"
+        android:id="@+id/no_notes_yet"/>
+
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_below="@+id/main_activity_toolbar"
+           android:id="@+id/note_rv"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:visibility="gone"
+           tools:listitem="@layout/note_item" />
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/add_note_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentEnd="true"
+           android:layout_margin="42dp"
+           android:backgroundTint="@color/backgroundActionBar"
+           android:elevation="10dp"
+           app:borderWidth="0dp"
+           app:rippleColor="@color/background"
+           android:src="@drawable/ic_add" />
+   </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

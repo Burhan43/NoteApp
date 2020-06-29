@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+    <include
+        layout="@layout/custom_action_bar"
+        android:id="@+id/login_activity_toolbar">
+
+    </include>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_activity_toolbar"
+        android:id="@+id/login_iv"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="40dp"
+        android:layout_marginTop="40dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/login_text"
+        android:textAllCaps="false"
+        android:layout_below="@+id/login_iv"
+        android:text="Hi, Please Choose Any Authentication Method And Keeps Your Information Protected"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/login_text"
+        android:showDividers="middle"
+        android:padding="20dp"
+        android:divider="@drawable/devider"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/biometric_login"
+            android:layout_height="50dp"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/background"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/phone_android"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="@string/phone_authenticate_text"
+                    android:textColor="@android:color/background_light"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/google_sign_in_btn"
+            android:layout_height="50dp"
+            app:cardCornerRadius="35dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/background"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_google_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="7dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_height="wrap_content"
+                    android:text="@string/google_authenticate_text"
+                    android:textColor="@android:color/background_light"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
